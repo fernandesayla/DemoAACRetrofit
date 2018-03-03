@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
             } else{
                 Log.i("TAG", "ERRO: ${apiRespose.erro}")
+                tvResultado.text = "OPsss... "
             }
         })
 
