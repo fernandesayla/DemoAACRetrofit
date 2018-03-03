@@ -22,6 +22,7 @@ class EnderecoRepositoryImpl : EnderecoRepository {
         val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl("http://viacep.com.br")
+                
                 .build()
         enderecoAPI = retrofit.create(EnderecoAPI::class.java)
     }
